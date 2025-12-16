@@ -1,0 +1,45 @@
+body {
+    background-color: #000;
+    color: #0A0; /* Bright green text */
+    font-family: 'VT323', monospace; /* Uses the retro font linked in HTML */
+    font-size: 1.2em;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: scroll; 
+}
+
+/* Adds a subtle green glow (CRT effect) to the container */
+#terminal-container {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    padding: 10px;
+}
+
+/* Ensures text wraps nicely while preserving the formatting from JavaScript */
+#terminal-output {
+    white-space: pre-wrap; 
+}
+
+/* Styles the input line */
+#terminal-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#prompt {
+    margin-right: 5px;
+}
+
+/* Styles the actual text input box */
+#command-input {
+    background: transparent; /* Makes the background black */
+    border: none; /* Removes the ugly default border */
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    caret-color: #0F0; /* Makes the blinking cursor green */
+    outline: none;
+    flex-grow: 1; 
+}
